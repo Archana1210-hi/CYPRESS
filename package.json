@@ -1,0 +1,20 @@
+{
+  "name": "cypress-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:AddToCart": "npx cypress run --spec cypress/e2e/AddToCartPageTest.cy.js",
+    "test:RegistrationPage": "npx cypress run --spec cypress/e2e/RegistrationPageTest.cy.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Archana1210-hi/Cypress-Automation.git)"
+  },
+  "author": "Archana",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}
