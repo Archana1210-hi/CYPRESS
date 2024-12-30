@@ -14,6 +14,12 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
             command: npm run test:AddToCart
+
+      - name: Cypress Test Report
+        uses: actions/upload-artifact@v4
+        with:
+                  name: mochawesome HTML report-AddToCart
+                  path: cypress/reports/html  # or path/to/artifact      
   Reg-Flow-run:
     runs-on: ubuntu-24.04
     steps:
@@ -26,4 +32,10 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-            command: npm run test:RegistrationPage          
+            command: npm run test:RegistrationPage 
+            
+      - name: Cypress Test Report
+        uses: actions/upload-artifact@v4
+        with:
+                  name: mochawesome HTML report-RegistrationPage
+                  path: cypress/reports/html  # or path/to/artifact            
