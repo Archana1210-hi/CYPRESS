@@ -16,6 +16,7 @@ jobs:
             command: npm run test:AddToCart
 
       - name: Cypress Test Report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
                   name: mochawesome HTML report-AddToCart
@@ -35,6 +36,7 @@ jobs:
             command: npm run test:RegistrationPage 
             
       - name: Cypress Test Report
+        if: always()
         uses: actions/upload-artifact@v4
         with:
                   name: mochawesome HTML report-RegistrationPage
